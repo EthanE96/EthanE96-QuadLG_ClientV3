@@ -251,25 +251,17 @@
                   
                   if (userEmail == confirm) {
                       window.location="admin.html";
+
+                      var auth2 = gapi.auth2.getAuthInstance();
+                      auth2.signOut().then(function (){
+                        console.log('User signed out.');
+                      });
                   }
                   else{
                       alert("Passwords do not match.");
                   }
               }
               </script>
-
-              <div>
-                <a href="#" onclick="signOut();">Sign out please</a>
-                <script>
-                function signOut() {
-                    var auth2 = gapi.auth2.getAuthInstance();
-                    auth2.signOut().then(function () {
-                    console.log('User signed out.');
-                    window.location="index.html";
-                    });
-                }
-                </script>
-              </div>
 
 
               </div>
