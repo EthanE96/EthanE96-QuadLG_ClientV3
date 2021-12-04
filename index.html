@@ -240,30 +240,37 @@
             <div class="col-lg-4 mb-5 mb-lg 0">
               <div class="fw-bold text-uppercase text-heading mb-3">
                 
-                <!-- Google Sign In -->
-                <div class="g-signin2" data-onsuccess="onSignIn"></div>
-                <script>
+              <!-- Google Sign In -->
+              <div class="g-signin2" data-onsuccess="onSignIn"></div>
+              <script>
                   function onSignIn(googleUser) {
                   var profile = googleUser.getBasicProfile();
-                  console.log('ID: ' + profile.getId()); // Do not send to your backend! Use an ID token instead.
-                  console.log('Name: ' + profile.getName());
-                  console.log('Image URL: ' + profile.getImageUrl());
-                  console.log('Email: ' + profile.getEmail()); // This is null if the 'email' scope is not present.
-                }
-                </script>
-                
-                <!-- Google Sign Out -->
-                <div>
+                  
+                  var confirm = "ethanaedwards5@gmail.com"
+                  var userEmail = profile.getEmail()
+                  
+                  if (userEmail == confirm) {
+                      window.location="admin.html";
+                  }
+                  else{
+                      alert("Passwords do not match.");
+                  }
+              }
+              </script>
+              
+              <!-- Google Sign Out -->
+              <div>
                   <a href="#" onclick="signOut();">Sign out</a>
                   <script>
-                    function signOut() {
+                  function signOut() {
                       var auth2 = gapi.auth2.getAuthInstance();
                       auth2.signOut().then(function () {
-                        console.log('User signed out.');
+                      console.log('User signed out.');
                       });
-                    }
+                  }
                   </script>
-                </div>
+              
+
               </div>
               <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit.</p>
               <ul class="list-inline">
