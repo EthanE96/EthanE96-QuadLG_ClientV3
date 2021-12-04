@@ -258,6 +258,19 @@
               }
               </script>
 
+              <div>
+                <a href="#" onclick="signOut();">Sign out please</a>
+                <script>
+                function signOut() {
+                    var auth2 = gapi.auth2.getAuthInstance();
+                    auth2.signOut().then(function () {
+                    console.log('User signed out.');
+                    window.location="index.html";
+                    });
+                }
+                </script>
+              </div>
+
 
               </div>
               <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit.</p>
