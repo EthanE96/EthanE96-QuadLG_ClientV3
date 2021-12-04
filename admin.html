@@ -18,11 +18,6 @@
 
     <!--- CSS -->
     <link rel="stylesheet" href="./Resources/CSS/admin.css" />
-
-    <!-- Google Sign In -->
-    <meta name="google-signin-client_id" content="835186845388-hdok47ojmo9up258e3tvg9s56kmie57i.apps.googleusercontent.com">
-    <script src="https://apis.google.com/js/platform.js" async defer></script>
-
 </head>
 <body>
 
@@ -306,20 +301,6 @@
                 </form>
             </div>
         </div>
-    </div>
-
-     <!-- Google Sign Out -->
-    <div>
-        <a href="#" onclick="signOut();">Sign out please</a>
-        <script>
-        function signOut() {
-            var auth2 = gapi.auth2.getAuthInstance();
-            auth2.signOut().then(function () {
-            console.log('User signed out.');
-            window.location="index.html";
-            });
-        }
-        </script>
     </div>
 
 </body>
