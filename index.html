@@ -139,9 +139,21 @@
       </div>
     </div>
 
-    <!-- Google SignIn -->
+    <!-- Google Sign In -->
     <div class="g-signin2" data-onsuccess="onSignIn"></div>
-    <div><button onclick="signOut()">Sign out</button></div>
+    
+    <!-- Google Sign Out -->
+    <div>
+      <a href="#" onclick="signOut();">Sign out</a>
+      <script>
+        function signOut() {
+          var auth2 = gapi.auth2.getAuthInstance();
+          auth2.signOut().then(function () {
+            console.log('User signed out.');
+          });
+        }
+      </script>
+    </div>
 
     <!--- Boxes -->
     <section class="p-5">
