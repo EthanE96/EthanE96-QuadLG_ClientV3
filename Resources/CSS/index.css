@@ -35,18 +35,6 @@ body {
 .active {
   color: var(--green) !important;
 }
-
-.btn-outline-success {
-  background-color: var(--green);
-}
-
-nav input[type=text] {
-  padding: 6px;
-  margin-top: 0;
-  margin-right: 16px;
-  border: none;
-  font-size: 17px;
-}
 /* ----- */
 
 
@@ -190,12 +178,8 @@ footer {
 
 .col-lg-4 h6{
   color: white;
+  font: 15px;
 }
-
-.col-lg-4 p {
-  color: white;
-}
-
 
 .bg-transparent {
   background-color: rgba(0, 0, 0, 0) !important;
@@ -206,5 +190,21 @@ footer {
 }
 .border-end-0 {
   border-right: 0;
+}
+
+.mc-field-group {
+  padding-right: 30%;
+  font-family: "Poppins", sans-serif;
+  font-size: 14px;
+  float: right;
+  padding-bottom: 8px;
+}
+
+.datefield{
+  float: right;
+}
+
+.button {
+  font-family: "Poppins", sans-serif;
 }
 /* ----- */

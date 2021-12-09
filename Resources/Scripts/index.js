@@ -1,11 +1,3 @@
-//Search Bar
-function searchBar() {
-    const value = document.getElementById("searchData").value
-    window.location="plants.html";
-    restoreFromHardCoded(value);
-}
-
-
 // Googe Sign In Script
 function onSignIn(googleUser) {
     var profile = googleUser.getBasicProfile();
