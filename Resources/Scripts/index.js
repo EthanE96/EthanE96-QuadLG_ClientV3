@@ -1,27 +1,9 @@
-//Search Function
-function searchButton(){  
-    const plantsAPI = "https://quadlg-api.herokuapp.com/api/plants";
-
-  fetch(plantsAPI)
-  .then(function (respone) {
-    console.log(respone);
-    return respone.json();
-  })
-  .then(function (json) {
-    let plantName = "";
-
-    json.forEach((plant) => {
-      plantName += "<option value=\""+plant.plantName+"\">"
-      
-      document.getElementById("brow").innerHTML = plantName;
-    }); 
-  })
-  .catch(function (error) {
-    console.log(error);
-  });
+//Search Bar
+function searchBar() {
+    const value = document.getElementById("searchData").value
+    window.location="plants.html";
+    restoreFromHardCoded(value);
 }
-
-
 
 
 // Googe Sign In Script
@@ -43,3 +25,4 @@ function onSignIn(googleUser) {
         alert("Passwords do not match.");
     }
 }
+

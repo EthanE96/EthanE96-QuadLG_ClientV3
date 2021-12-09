@@ -67,14 +67,16 @@ nav input[type=text] {
 .header {
   margin-top: 15px;
   font-weight: 600;
+  color: var(--gray);
 }
 
 .subheader {
   padding-right: 25%;
   padding-left:25%;
   text-align: center;
-  margin-bottom: -15%;
-  margin-top: 10px;
+  margin-bottom: -40%;
+  margin-top: 20px;
+  color: var(--gray);
 }
 
 @media screen and (max-width: 700px){   
@@ -126,12 +128,14 @@ nav input[type=text] {
 #services
 {
   background-color: #373737 !important;
+  margin-bottom: 30px;
 }
 
 #services-title
 {
   background-color: #373737 !important;
-  border-color: #373737 !important;
+  margin-bottom: 20px !important;
+  font-size: 40px !important;
 }
 #services img {
 max-height: 200px;
@@ -144,6 +148,9 @@ max-width: 200px;
   padding-bottom: 15px;
 }
 
+.bottom-gap {
+  margin-bottom: -30px !important;
+}
 /* ----- */
 
 

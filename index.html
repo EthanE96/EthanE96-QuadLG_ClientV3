@@ -20,9 +20,10 @@
     
   </head>
 
-  <body onload="searchButton()">
+  <body>
     <!-- JavaScript -->
     <script type="text/javascript" src="./Resources/Scripts/index.js"></script>
+
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
     <script
       src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
@@ -66,12 +67,10 @@
             </li>
           </ul>
 	
-            <input name="champion" type="text" id="txtAutoComplete" list="brow"
-            onkeydown = "if (event.keyCode == 13)getPlants(this.value)"
-            placeholder="Search for plants..." />
-
-            <datalist id="brow">
-            </datalist>
+          <form class="d-flex">
+            <input class="form-control me-2"vid="searchData" type="search" placeholder="Search for plants..." aria-label="Search"/>
+            <button class="btn btn-outline-success" style="color: white" type="submit" onsubmit="searchBar()" >Search</button>
+          </form>
 
         </div>
       </div>
@@ -192,42 +191,39 @@
     </section>
 
     <!-- Specializing In -->
-    <section class="services mb-5">
-    <div class="container">
-      <h1 class="display-5 header text-center" id= "services-title" style="padding-top: 20px; color: white;"> Specializing In </h1>
-      <div class="row bg-dark text-center" id= "services">
-        <div class="col-sm-4">
-          <img src="./Resources/Images/Index/Specializing In/1.png" alt="1">
-          <h3 class> Landscape Planting </h3>
-        </div>
-        <div class="col-sm-4">
-          <img src="./Resources/Images/Index/Specializing In/2.png" alt="1">
-          <h3 class> Garden Maintenance </h3>
-        </div>
-        <div class="col-sm-4">
-          <img src="./Resources/Images/Index/Specializing In/3.png" alt="1">
-          <h3 class> Flower Design </h3>
-        </div>
+    <section class="services mb-5 bottom-gap">
+      <div class="container">
+        <h1 class="display-5 header text-center" id= "services-title" style="padding-top: 25px; color: white;"> Specializing In </h1>
+        <div class="row bg-dark text-center" id= "services">
+          <div class="col-sm-4">
+            <img src="./Resources/Images/Index/Specializing In/1.png" alt="1">
+            <h3 class> Landscape Planting </h3>
+          </div>
+          <div class="col-sm-4">
+            <img src="./Resources/Images/Index/Specializing In/2.png" alt="1">
+            <h3 class> Garden Maintenance </h3>
+          </div>
+          <div class="col-sm-4">
+            <img src="./Resources/Images/Index/Specializing In/3.png" alt="1">
+            <h3 class> Flower Design </h3>
+          </div>
 
-        <div class="row bg-dark text-center" id="services">
-          <div class="col-sm-4">
-            <img src="./Resources/Images/Index/Specializing In/4.png" alt="1">
-            <h3 class> Garden Light Fixature </h3>
-          </div>
-          <div class="col-sm-4">
-            <img src="./Resources/Images/Index/Specializing In/5.png" alt="1">
-            <h3 class> Irrigation </h3>
-          </div>
-          <div class="col-sm-4">
-            <img src="./Resources/Images/Index/Specializing In/6.png" alt="1">
-            <h3 class> Landscape Renovation </h3>
+          <div class="row bg-dark text-center" id="services">
+            <div class="col-sm-4">
+              <img src="./Resources/Images/Index/Specializing In/4.png" alt="1">
+              <h3 class> Garden Light Fixature </h3>
+            </div>
+            <div class="col-sm-4">
+              <img src="./Resources/Images/Index/Specializing In/5.png" alt="1">
+              <h3 class> Irrigation </h3>
+            </div>
+            <div class="col-sm-4">
+              <img src="./Resources/Images/Index/Specializing In/6.png" alt="1">
+              <h3 class> Landscape Renovation </h3>
+            </div>
           </div>
         </div>
-
-        
-        
       </div>
-    </div>
     </section>
 
     <!--- Google Map -->
@@ -283,11 +279,11 @@
             <div class="col-lg-2 col-md-6 mb-5 mb-lg-0">
               <ul class="list-unstyled" style="margin-top: 10%;">
                 <li class="list-inline-item">
-                  <a href="#" class="text-para" title="facebook">
+                  <a href="https://www.facebook.com/profile.php?id=100075928506681" target="_blank" class="text-para" title="facebook">
                     <img src="./Resources/Images/Logo/facebook.png">
                   </a>
                   <li class="list-inline-item">
-                  <a href="#" class="text-para" title="instagram">
+                  <a href="https://www.instagram.com/quadlandscapingandgarden/" target="_blank" class="text-para" title="instagram">
                    <img src="./Resources/Images/Logo/instagram.png">
                   </a>
                 </li>
@@ -310,7 +306,7 @@
                     aria-label="Your E-Mail Address"
                   />
                   <button
-                    class="btn btn-outline-dark border-start-0"
+                    class="btn btn-outline-light border-start-0"
                     type="submit"
                   >
                     <i class="bi bi-plus text-lg"></i>
@@ -322,5 +318,7 @@
         </div>
       </div>
     </footer>
+
   </body>
+
 </html>
