@@ -132,7 +132,7 @@ function deletePlant(data){
 }
 
 function createPlant(data){
-  const newPlant = "https://quadlg-api.herokuapp.com/api/plants/";
+  const newPlant = "https://quadlg-api.herokuapp.com/api/plants";
   fetch(newPlant, {
     method: "POST",
     headers: {"Content-Type": 'application/json'},
