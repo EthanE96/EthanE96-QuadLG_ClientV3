@@ -117,12 +117,12 @@ function onRowValueChanged(event) {
       data.season +
       ')'
   );
-  deletePlant(data);
+  deletePlant(data.id);
   createPlant(data);
 }
 
-function deletePlant(data){
-  const deletePlant = "https://quadlg-api.herokuapp.com/api/plants/" + data.id;
+function deletePlant(id){
+  const deletePlant = "https://quadlg-api.herokuapp.com/api/plants/" + id;
   fetch(deletePlant, {
     method: "DELETE",
     headers: {"Content-Type": 'application/json'},
