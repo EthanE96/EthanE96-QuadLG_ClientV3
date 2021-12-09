@@ -119,6 +119,7 @@ function onRowValueChanged(event) {
   );
   deletePlant(data.id);
   createPlant(data);
+  getPlants();
 }
 
 function deletePlant(id){
