@@ -41,8 +41,9 @@ body {
 }
 /* ----- */
 
+/* Text */
 .banner {
-  color: #222;
+  color: var(--green);
   text-align: center;
   padding-top: 100px;
 }
@@ -55,11 +56,36 @@ body {
 .subheading {
   font-size: 25px;
 }
+/* ----- */
 
-.plant-image {
-  max-width: 25px;
-  max-height: 25px;
+
+/* AG Grid */
+#myGrid{
+  margin: auto;
 }
+
+.ag-pivot-off .ag-header-cell-label {
+  color: var(--gray);
+  font-family: "Poppins", sans-serif;
+  font-size: 120%;
+}
+
+.evens{
+  background-color: var(--gray) !important;
+  color: white !important;
+  font-family: "Poppins", sans-serif !important;
+  font-size: 125% !important;
+  border-color: white;
+}
+
+.odds{
+  background-color: #474747 !important;
+  color: white !important;
+  font-family: "Poppins", sans-serif !important;
+  font-size: 125% !important;
+}
+/* ----- */
+
 
 footer {
   background-color: #3f3f3f;
